@@ -38,7 +38,13 @@ public sealed record DiagramTypeRichRelationalModelHash : IDeterminedHash
         : this(model.Id, (model as IDiagramTypeRelationalModel).Name) { }
 
     public DiagramTypeRichRelationalModelHash(IGuid id, IString name)
-        : this(new DeterminedHash(id), new DeterminedHash(name)) { }
+        : this(new DeterminedHash(id), name) { }
+
+    public DiagramTypeRichRelationalModelHash(IDeterminedHash idHash, IString name)
+        : this(idHash, new DeterminedHash(name)) { }
+
+    public DiagramTypeRichRelationalModelHash(IGuid id, IDeterminedHash nameHash)
+        : this(new DeterminedHash(id), nameHash) { }
 
     public DiagramTypeRichRelationalModelHash(
         IDeterminedHash idHash,
