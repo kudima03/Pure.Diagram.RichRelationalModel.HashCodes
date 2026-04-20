@@ -42,7 +42,7 @@ public sealed record DiagramRichRelationalModelHashTests
             new Guid(),
             new DiagramTypeRichRelationalModel(new Guid(), new RandomString()),
             [
-                new SeriesRichRelationalModel(
+                new DiagramSeriesRichRelationalModel(
                     new Guid(),
                     new Guid(),
                     new RandomString(),
@@ -70,9 +70,9 @@ public sealed record DiagramRichRelationalModelHashTests
             new Guid(),
             new RandomString()
         );
-        IEnumerable<ISeries> series =
+        IEnumerable<IDiagramSeries> series =
         [
-            new SeriesRichRelationalModel(
+            new DiagramSeriesRichRelationalModel(
                 new Guid(),
                 new Guid(),
                 new RandomString(),
@@ -115,9 +115,9 @@ public sealed record DiagramRichRelationalModelHashTests
             new Guid(),
             new RandomString()
         );
-        IEnumerable<ISeries> series =
+        IEnumerable<IDiagramSeries> series =
         [
-            new SeriesRichRelationalModel(
+            new DiagramSeriesRichRelationalModel(
                 new Guid(),
                 new Guid(),
                 new RandomString(),
@@ -160,9 +160,9 @@ public sealed record DiagramRichRelationalModelHashTests
             new Guid(),
             new RandomString()
         );
-        IEnumerable<ISeries> series =
+        IEnumerable<IDiagramSeries> series =
         [
-            new SeriesRichRelationalModel(
+            new DiagramSeriesRichRelationalModel(
                 new Guid(),
                 new Guid(),
                 new RandomString(),
@@ -205,9 +205,9 @@ public sealed record DiagramRichRelationalModelHashTests
             new Guid(),
             new RandomString()
         );
-        IEnumerable<ISeries> series =
+        IEnumerable<IDiagramSeries> series =
         [
-            new SeriesRichRelationalModel(
+            new DiagramSeriesRichRelationalModel(
                 new Guid(),
                 new Guid(),
                 new RandomString(),
@@ -250,9 +250,9 @@ public sealed record DiagramRichRelationalModelHashTests
             new Guid(),
             new RandomString()
         );
-        IEnumerable<ISeries> series =
+        IEnumerable<IDiagramSeries> series =
         [
-            new SeriesRichRelationalModel(
+            new DiagramSeriesRichRelationalModel(
                 new Guid(),
                 new Guid(),
                 new RandomString(),
@@ -295,9 +295,9 @@ public sealed record DiagramRichRelationalModelHashTests
             new Guid(),
             new RandomString()
         );
-        IEnumerable<ISeries> series =
+        IEnumerable<IDiagramSeries> series =
         [
-            new SeriesRichRelationalModel(
+            new DiagramSeriesRichRelationalModel(
                 new Guid(),
                 new Guid(),
                 new RandomString(),
@@ -340,9 +340,9 @@ public sealed record DiagramRichRelationalModelHashTests
             new Guid(),
             new RandomString()
         );
-        IEnumerable<ISeries> series =
+        IEnumerable<IDiagramSeries> series =
         [
-            new SeriesRichRelationalModel(
+            new DiagramSeriesRichRelationalModel(
                 new Guid(),
                 new Guid(),
                 new RandomString(),
@@ -368,7 +368,7 @@ public sealed record DiagramRichRelationalModelHashTests
             description,
             typeId,
             type,
-            new DeterminedHash(series.Select(x => new SeriesHash(x)))
+            new DeterminedHash(series.Select(x => new DiagramSeriesHash(x)))
         );
 
         Assert.True(expected.SequenceEqual(actual));
@@ -385,9 +385,9 @@ public sealed record DiagramRichRelationalModelHashTests
             new Guid(),
             new RandomString()
         );
-        IEnumerable<ISeries> series =
+        IEnumerable<IDiagramSeries> series =
         [
-            new SeriesRichRelationalModel(
+            new DiagramSeriesRichRelationalModel(
                 new Guid(),
                 new Guid(),
                 new RandomString(),
@@ -413,7 +413,7 @@ public sealed record DiagramRichRelationalModelHashTests
             description,
             typeId,
             type,
-            new DeterminedHash(series.Select(x => new SeriesHash(x)))
+            new DeterminedHash(series.Select(x => new DiagramSeriesHash(x)))
         );
 
         Assert.True(expected.SequenceEqual(actual));
@@ -430,9 +430,9 @@ public sealed record DiagramRichRelationalModelHashTests
             new Guid(),
             new RandomString()
         );
-        IEnumerable<ISeries> series =
+        IEnumerable<IDiagramSeries> series =
         [
-            new SeriesRichRelationalModel(
+            new DiagramSeriesRichRelationalModel(
                 new Guid(),
                 new Guid(),
                 new RandomString(),
@@ -458,7 +458,7 @@ public sealed record DiagramRichRelationalModelHashTests
             description,
             typeId,
             type,
-            new DeterminedHash(series.Select(x => new SeriesHash(x)))
+            new DeterminedHash(series.Select(x => new DiagramSeriesHash(x)))
         );
 
         Assert.True(expected.SequenceEqual(actual));
@@ -475,9 +475,9 @@ public sealed record DiagramRichRelationalModelHashTests
             new Guid(),
             new RandomString()
         );
-        IEnumerable<ISeries> series =
+        IEnumerable<IDiagramSeries> series =
         [
-            new SeriesRichRelationalModel(
+            new DiagramSeriesRichRelationalModel(
                 new Guid(),
                 new Guid(),
                 new RandomString(),
@@ -520,9 +520,9 @@ public sealed record DiagramRichRelationalModelHashTests
             new Guid(),
             new RandomString()
         );
-        IEnumerable<ISeries> series =
+        IEnumerable<IDiagramSeries> series =
         [
-            new SeriesRichRelationalModel(
+            new DiagramSeriesRichRelationalModel(
                 new Guid(),
                 new Guid(),
                 new RandomString(),
@@ -548,7 +548,7 @@ public sealed record DiagramRichRelationalModelHashTests
             new DeterminedHash(description),
             typeId,
             type,
-            new DeterminedHash(series.Select(x => new SeriesHash(x)))
+            new DeterminedHash(series.Select(x => new DiagramSeriesHash(x)))
         );
 
         Assert.True(expected.SequenceEqual(actual));
@@ -565,9 +565,9 @@ public sealed record DiagramRichRelationalModelHashTests
             new Guid(),
             new RandomString()
         );
-        IEnumerable<ISeries> series =
+        IEnumerable<IDiagramSeries> series =
         [
-            new SeriesRichRelationalModel(
+            new DiagramSeriesRichRelationalModel(
                 new Guid(),
                 new Guid(),
                 new RandomString(),
@@ -610,9 +610,9 @@ public sealed record DiagramRichRelationalModelHashTests
             new Guid(),
             new RandomString()
         );
-        IEnumerable<ISeries> series =
+        IEnumerable<IDiagramSeries> series =
         [
-            new SeriesRichRelationalModel(
+            new DiagramSeriesRichRelationalModel(
                 new Guid(),
                 new Guid(),
                 new RandomString(),
@@ -655,9 +655,9 @@ public sealed record DiagramRichRelationalModelHashTests
             new Guid(),
             new RandomString()
         );
-        IEnumerable<ISeries> series =
+        IEnumerable<IDiagramSeries> series =
         [
-            new SeriesRichRelationalModel(
+            new DiagramSeriesRichRelationalModel(
                 new Guid(),
                 new Guid(),
                 new RandomString(),
@@ -700,9 +700,9 @@ public sealed record DiagramRichRelationalModelHashTests
             new Guid(),
             new RandomString()
         );
-        IEnumerable<ISeries> series =
+        IEnumerable<IDiagramSeries> series =
         [
-            new SeriesRichRelationalModel(
+            new DiagramSeriesRichRelationalModel(
                 new Guid(),
                 new Guid(),
                 new RandomString(),
@@ -728,7 +728,7 @@ public sealed record DiagramRichRelationalModelHashTests
             description,
             new DeterminedHash(typeId),
             type,
-            new DeterminedHash(series.Select(x => new SeriesHash(x)))
+            new DeterminedHash(series.Select(x => new DiagramSeriesHash(x)))
         );
 
         Assert.True(expected.SequenceEqual(actual));
@@ -745,9 +745,9 @@ public sealed record DiagramRichRelationalModelHashTests
             new Guid(),
             new RandomString()
         );
-        IEnumerable<ISeries> series =
+        IEnumerable<IDiagramSeries> series =
         [
-            new SeriesRichRelationalModel(
+            new DiagramSeriesRichRelationalModel(
                 new Guid(),
                 new Guid(),
                 new RandomString(),
@@ -790,9 +790,9 @@ public sealed record DiagramRichRelationalModelHashTests
             new Guid(),
             new RandomString()
         );
-        IEnumerable<ISeries> series =
+        IEnumerable<IDiagramSeries> series =
         [
-            new SeriesRichRelationalModel(
+            new DiagramSeriesRichRelationalModel(
                 new Guid(),
                 new Guid(),
                 new RandomString(),
@@ -835,9 +835,9 @@ public sealed record DiagramRichRelationalModelHashTests
             new Guid(),
             new RandomString()
         );
-        IEnumerable<ISeries> series =
+        IEnumerable<IDiagramSeries> series =
         [
-            new SeriesRichRelationalModel(
+            new DiagramSeriesRichRelationalModel(
                 new Guid(),
                 new Guid(),
                 new RandomString(),
@@ -880,9 +880,9 @@ public sealed record DiagramRichRelationalModelHashTests
             new Guid(),
             new RandomString()
         );
-        IEnumerable<ISeries> series =
+        IEnumerable<IDiagramSeries> series =
         [
-            new SeriesRichRelationalModel(
+            new DiagramSeriesRichRelationalModel(
                 new Guid(),
                 new Guid(),
                 new RandomString(),
@@ -908,7 +908,7 @@ public sealed record DiagramRichRelationalModelHashTests
             description,
             typeId,
             new DiagramTypeHash(type),
-            new DeterminedHash(series.Select(x => new SeriesHash(x)))
+            new DeterminedHash(series.Select(x => new DiagramSeriesHash(x)))
         );
 
         Assert.True(expected.SequenceEqual(actual));
@@ -925,9 +925,9 @@ public sealed record DiagramRichRelationalModelHashTests
             new Guid(),
             new RandomString()
         );
-        IEnumerable<ISeries> series =
+        IEnumerable<IDiagramSeries> series =
         [
-            new SeriesRichRelationalModel(
+            new DiagramSeriesRichRelationalModel(
                 new Guid(),
                 new Guid(),
                 new RandomString(),
@@ -970,9 +970,9 @@ public sealed record DiagramRichRelationalModelHashTests
             new Guid(),
             new RandomString()
         );
-        IEnumerable<ISeries> series =
+        IEnumerable<IDiagramSeries> series =
         [
-            new SeriesRichRelationalModel(
+            new DiagramSeriesRichRelationalModel(
                 new Guid(),
                 new Guid(),
                 new RandomString(),
@@ -1015,9 +1015,9 @@ public sealed record DiagramRichRelationalModelHashTests
             new Guid(),
             new RandomString()
         );
-        IEnumerable<ISeries> series =
+        IEnumerable<IDiagramSeries> series =
         [
-            new SeriesRichRelationalModel(
+            new DiagramSeriesRichRelationalModel(
                 new Guid(),
                 new Guid(),
                 new RandomString(),
@@ -1060,9 +1060,9 @@ public sealed record DiagramRichRelationalModelHashTests
             new Guid(),
             new RandomString()
         );
-        IEnumerable<ISeries> series =
+        IEnumerable<IDiagramSeries> series =
         [
-            new SeriesRichRelationalModel(
+            new DiagramSeriesRichRelationalModel(
                 new Guid(),
                 new Guid(),
                 new RandomString(),
@@ -1088,7 +1088,7 @@ public sealed record DiagramRichRelationalModelHashTests
             description,
             typeId,
             new DiagramTypeHash(type),
-            new DeterminedHash(series.Select(x => new SeriesHash(x)))
+            new DeterminedHash(series.Select(x => new DiagramSeriesHash(x)))
         );
 
         Assert.True(expected.SequenceEqual(actual));
@@ -1105,9 +1105,9 @@ public sealed record DiagramRichRelationalModelHashTests
             new Guid(),
             new RandomString()
         );
-        IEnumerable<ISeries> series =
+        IEnumerable<IDiagramSeries> series =
         [
-            new SeriesRichRelationalModel(
+            new DiagramSeriesRichRelationalModel(
                 new Guid(),
                 new Guid(),
                 new RandomString(),
@@ -1133,7 +1133,7 @@ public sealed record DiagramRichRelationalModelHashTests
             description,
             new DeterminedHash(typeId),
             type,
-            new DeterminedHash(series.Select(x => new SeriesHash(x)))
+            new DeterminedHash(series.Select(x => new DiagramSeriesHash(x)))
         );
 
         Assert.True(expected.SequenceEqual(actual));
@@ -1150,9 +1150,9 @@ public sealed record DiagramRichRelationalModelHashTests
             new Guid(),
             new RandomString()
         );
-        IEnumerable<ISeries> series =
+        IEnumerable<IDiagramSeries> series =
         [
-            new SeriesRichRelationalModel(
+            new DiagramSeriesRichRelationalModel(
                 new Guid(),
                 new Guid(),
                 new RandomString(),
@@ -1178,7 +1178,7 @@ public sealed record DiagramRichRelationalModelHashTests
             new DeterminedHash(description),
             typeId,
             type,
-            new DeterminedHash(series.Select(x => new SeriesHash(x)))
+            new DeterminedHash(series.Select(x => new DiagramSeriesHash(x)))
         );
 
         Assert.True(expected.SequenceEqual(actual));
@@ -1195,9 +1195,9 @@ public sealed record DiagramRichRelationalModelHashTests
             new Guid(),
             new RandomString()
         );
-        IEnumerable<ISeries> series =
+        IEnumerable<IDiagramSeries> series =
         [
-            new SeriesRichRelationalModel(
+            new DiagramSeriesRichRelationalModel(
                 new Guid(),
                 new Guid(),
                 new RandomString(),
@@ -1223,7 +1223,7 @@ public sealed record DiagramRichRelationalModelHashTests
             new DeterminedHash(description),
             typeId,
             type,
-            new DeterminedHash(series.Select(x => new SeriesHash(x)))
+            new DeterminedHash(series.Select(x => new DiagramSeriesHash(x)))
         );
 
         Assert.True(expected.SequenceEqual(actual));
@@ -1240,9 +1240,9 @@ public sealed record DiagramRichRelationalModelHashTests
             new Guid(),
             new RandomString()
         );
-        IEnumerable<ISeries> series =
+        IEnumerable<IDiagramSeries> series =
         [
-            new SeriesRichRelationalModel(
+            new DiagramSeriesRichRelationalModel(
                 new Guid(),
                 new Guid(),
                 new RandomString(),
@@ -1268,7 +1268,7 @@ public sealed record DiagramRichRelationalModelHashTests
             description,
             typeId,
             type,
-            new DeterminedHash(series.Select(x => new SeriesHash(x)))
+            new DeterminedHash(series.Select(x => new DiagramSeriesHash(x)))
         );
 
         Assert.True(expected.SequenceEqual(actual));
@@ -1285,9 +1285,9 @@ public sealed record DiagramRichRelationalModelHashTests
             new Guid(),
             new RandomString()
         );
-        IEnumerable<ISeries> series =
+        IEnumerable<IDiagramSeries> series =
         [
-            new SeriesRichRelationalModel(
+            new DiagramSeriesRichRelationalModel(
                 new Guid(),
                 new Guid(),
                 new RandomString(),
@@ -1313,7 +1313,7 @@ public sealed record DiagramRichRelationalModelHashTests
             description,
             new DeterminedHash(typeId),
             type,
-            new DeterminedHash(series.Select(x => new SeriesHash(x)))
+            new DeterminedHash(series.Select(x => new DiagramSeriesHash(x)))
         );
 
         Assert.True(expected.SequenceEqual(actual));
@@ -1330,9 +1330,9 @@ public sealed record DiagramRichRelationalModelHashTests
             new Guid(),
             new RandomString()
         );
-        IEnumerable<ISeries> series =
+        IEnumerable<IDiagramSeries> series =
         [
-            new SeriesRichRelationalModel(
+            new DiagramSeriesRichRelationalModel(
                 new Guid(),
                 new Guid(),
                 new RandomString(),
@@ -1358,7 +1358,7 @@ public sealed record DiagramRichRelationalModelHashTests
             description,
             typeId,
             new DiagramTypeHash(type),
-            new DeterminedHash(series.Select(x => new SeriesHash(x)))
+            new DeterminedHash(series.Select(x => new DiagramSeriesHash(x)))
         );
 
         Assert.True(expected.SequenceEqual(actual));
@@ -1375,9 +1375,9 @@ public sealed record DiagramRichRelationalModelHashTests
             new Guid(),
             new RandomString()
         );
-        IEnumerable<ISeries> series =
+        IEnumerable<IDiagramSeries> series =
         [
-            new SeriesRichRelationalModel(
+            new DiagramSeriesRichRelationalModel(
                 new Guid(),
                 new Guid(),
                 new RandomString(),
@@ -1420,9 +1420,9 @@ public sealed record DiagramRichRelationalModelHashTests
             new Guid(),
             new RandomString()
         );
-        IEnumerable<ISeries> series =
+        IEnumerable<IDiagramSeries> series =
         [
-            new SeriesRichRelationalModel(
+            new DiagramSeriesRichRelationalModel(
                 new Guid(),
                 new Guid(),
                 new RandomString(),
@@ -1465,9 +1465,9 @@ public sealed record DiagramRichRelationalModelHashTests
             new Guid(),
             new RandomString()
         );
-        IEnumerable<ISeries> series =
+        IEnumerable<IDiagramSeries> series =
         [
-            new SeriesRichRelationalModel(
+            new DiagramSeriesRichRelationalModel(
                 new Guid(),
                 new Guid(),
                 new RandomString(),
@@ -1510,9 +1510,9 @@ public sealed record DiagramRichRelationalModelHashTests
             new Guid(),
             new RandomString()
         );
-        IEnumerable<ISeries> series =
+        IEnumerable<IDiagramSeries> series =
         [
-            new SeriesRichRelationalModel(
+            new DiagramSeriesRichRelationalModel(
                 new Guid(),
                 new Guid(),
                 new RandomString(),
@@ -1555,9 +1555,9 @@ public sealed record DiagramRichRelationalModelHashTests
             new Guid(),
             new RandomString()
         );
-        IEnumerable<ISeries> series =
+        IEnumerable<IDiagramSeries> series =
         [
-            new SeriesRichRelationalModel(
+            new DiagramSeriesRichRelationalModel(
                 new Guid(),
                 new Guid(),
                 new RandomString(),
@@ -1583,7 +1583,7 @@ public sealed record DiagramRichRelationalModelHashTests
             new DeterminedHash(description),
             new DeterminedHash(typeId),
             type,
-            new DeterminedHash(series.Select(x => new SeriesHash(x)))
+            new DeterminedHash(series.Select(x => new DiagramSeriesHash(x)))
         );
 
         Assert.True(expected.SequenceEqual(actual));
@@ -1600,9 +1600,9 @@ public sealed record DiagramRichRelationalModelHashTests
             new Guid(),
             new RandomString()
         );
-        IEnumerable<ISeries> series =
+        IEnumerable<IDiagramSeries> series =
         [
-            new SeriesRichRelationalModel(
+            new DiagramSeriesRichRelationalModel(
                 new Guid(),
                 new Guid(),
                 new RandomString(),
@@ -1645,9 +1645,9 @@ public sealed record DiagramRichRelationalModelHashTests
             new Guid(),
             new RandomString()
         );
-        IEnumerable<ISeries> series =
+        IEnumerable<IDiagramSeries> series =
         [
-            new SeriesRichRelationalModel(
+            new DiagramSeriesRichRelationalModel(
                 new Guid(),
                 new Guid(),
                 new RandomString(),
@@ -1690,9 +1690,9 @@ public sealed record DiagramRichRelationalModelHashTests
             new Guid(),
             new RandomString()
         );
-        IEnumerable<ISeries> series =
+        IEnumerable<IDiagramSeries> series =
         [
-            new SeriesRichRelationalModel(
+            new DiagramSeriesRichRelationalModel(
                 new Guid(),
                 new Guid(),
                 new RandomString(),
@@ -1718,7 +1718,7 @@ public sealed record DiagramRichRelationalModelHashTests
             description,
             new DeterminedHash(typeId),
             new DiagramTypeHash(type),
-            new DeterminedHash(series.Select(x => new SeriesHash(x)))
+            new DeterminedHash(series.Select(x => new DiagramSeriesHash(x)))
         );
 
         Assert.True(expected.SequenceEqual(actual));
@@ -1735,9 +1735,9 @@ public sealed record DiagramRichRelationalModelHashTests
             new Guid(),
             new RandomString()
         );
-        IEnumerable<ISeries> series =
+        IEnumerable<IDiagramSeries> series =
         [
-            new SeriesRichRelationalModel(
+            new DiagramSeriesRichRelationalModel(
                 new Guid(),
                 new Guid(),
                 new RandomString(),
@@ -1780,9 +1780,9 @@ public sealed record DiagramRichRelationalModelHashTests
             new Guid(),
             new RandomString()
         );
-        IEnumerable<ISeries> series =
+        IEnumerable<IDiagramSeries> series =
         [
-            new SeriesRichRelationalModel(
+            new DiagramSeriesRichRelationalModel(
                 new Guid(),
                 new Guid(),
                 new RandomString(),
@@ -1825,9 +1825,9 @@ public sealed record DiagramRichRelationalModelHashTests
             new Guid(),
             new RandomString()
         );
-        IEnumerable<ISeries> series =
+        IEnumerable<IDiagramSeries> series =
         [
-            new SeriesRichRelationalModel(
+            new DiagramSeriesRichRelationalModel(
                 new Guid(),
                 new Guid(),
                 new RandomString(),
@@ -1870,9 +1870,9 @@ public sealed record DiagramRichRelationalModelHashTests
             new Guid(),
             new RandomString()
         );
-        IEnumerable<ISeries> series =
+        IEnumerable<IDiagramSeries> series =
         [
-            new SeriesRichRelationalModel(
+            new DiagramSeriesRichRelationalModel(
                 new Guid(),
                 new Guid(),
                 new RandomString(),
@@ -1915,9 +1915,9 @@ public sealed record DiagramRichRelationalModelHashTests
             new Guid(),
             new RandomString()
         );
-        IEnumerable<ISeries> series =
+        IEnumerable<IDiagramSeries> series =
         [
-            new SeriesRichRelationalModel(
+            new DiagramSeriesRichRelationalModel(
                 new Guid(),
                 new Guid(),
                 new RandomString(),
@@ -1943,7 +1943,7 @@ public sealed record DiagramRichRelationalModelHashTests
             new DeterminedHash(description),
             typeId,
             new DiagramTypeHash(type),
-            new DeterminedHash(series.Select(x => new SeriesHash(x)))
+            new DeterminedHash(series.Select(x => new DiagramSeriesHash(x)))
         );
 
         Assert.True(expected.SequenceEqual(actual));
@@ -1960,9 +1960,9 @@ public sealed record DiagramRichRelationalModelHashTests
             new Guid(),
             new RandomString()
         );
-        IEnumerable<ISeries> series =
+        IEnumerable<IDiagramSeries> series =
         [
-            new SeriesRichRelationalModel(
+            new DiagramSeriesRichRelationalModel(
                 new Guid(),
                 new Guid(),
                 new RandomString(),
@@ -1988,7 +1988,7 @@ public sealed record DiagramRichRelationalModelHashTests
             description,
             typeId,
             new DiagramTypeHash(type),
-            new DeterminedHash(series.Select(x => new SeriesHash(x)))
+            new DeterminedHash(series.Select(x => new DiagramSeriesHash(x)))
         );
 
         Assert.True(expected.SequenceEqual(actual));
@@ -2005,9 +2005,9 @@ public sealed record DiagramRichRelationalModelHashTests
             new Guid(),
             new RandomString()
         );
-        IEnumerable<ISeries> series =
+        IEnumerable<IDiagramSeries> series =
         [
-            new SeriesRichRelationalModel(
+            new DiagramSeriesRichRelationalModel(
                 new Guid(),
                 new Guid(),
                 new RandomString(),
@@ -2033,7 +2033,7 @@ public sealed record DiagramRichRelationalModelHashTests
             new DeterminedHash(description),
             typeId,
             new DiagramTypeHash(type),
-            new DeterminedHash(series.Select(x => new SeriesHash(x)))
+            new DeterminedHash(series.Select(x => new DiagramSeriesHash(x)))
         );
 
         Assert.True(expected.SequenceEqual(actual));
@@ -2050,9 +2050,9 @@ public sealed record DiagramRichRelationalModelHashTests
             new Guid(),
             new RandomString()
         );
-        IEnumerable<ISeries> series =
+        IEnumerable<IDiagramSeries> series =
         [
-            new SeriesRichRelationalModel(
+            new DiagramSeriesRichRelationalModel(
                 new Guid(),
                 new Guid(),
                 new RandomString(),
@@ -2078,7 +2078,7 @@ public sealed record DiagramRichRelationalModelHashTests
             new DeterminedHash(description),
             typeId,
             new DiagramTypeHash(type),
-            new DeterminedHash(series.Select(x => new SeriesHash(x)))
+            new DeterminedHash(series.Select(x => new DiagramSeriesHash(x)))
         );
 
         Assert.True(expected.SequenceEqual(actual));
@@ -2095,9 +2095,9 @@ public sealed record DiagramRichRelationalModelHashTests
             new Guid(),
             new RandomString()
         );
-        IEnumerable<ISeries> series =
+        IEnumerable<IDiagramSeries> series =
         [
-            new SeriesRichRelationalModel(
+            new DiagramSeriesRichRelationalModel(
                 new Guid(),
                 new Guid(),
                 new RandomString(),
@@ -2123,7 +2123,7 @@ public sealed record DiagramRichRelationalModelHashTests
             new DeterminedHash(description),
             new DeterminedHash(typeId),
             new DiagramTypeHash(type),
-            new DeterminedHash(series.Select(x => new SeriesHash(x)))
+            new DeterminedHash(series.Select(x => new DiagramSeriesHash(x)))
         );
 
         Assert.True(expected.SequenceEqual(actual));
@@ -2140,9 +2140,9 @@ public sealed record DiagramRichRelationalModelHashTests
             new Guid(),
             new RandomString()
         );
-        IEnumerable<ISeries> series =
+        IEnumerable<IDiagramSeries> series =
         [
-            new SeriesRichRelationalModel(
+            new DiagramSeriesRichRelationalModel(
                 new Guid(),
                 new Guid(),
                 new RandomString(),
@@ -2168,7 +2168,7 @@ public sealed record DiagramRichRelationalModelHashTests
             description,
             new DeterminedHash(typeId),
             new DiagramTypeHash(type),
-            new DeterminedHash(series.Select(x => new SeriesHash(x)))
+            new DeterminedHash(series.Select(x => new DiagramSeriesHash(x)))
         );
 
         Assert.True(expected.SequenceEqual(actual));
@@ -2185,9 +2185,9 @@ public sealed record DiagramRichRelationalModelHashTests
             new Guid(),
             new RandomString()
         );
-        IEnumerable<ISeries> series =
+        IEnumerable<IDiagramSeries> series =
         [
-            new SeriesRichRelationalModel(
+            new DiagramSeriesRichRelationalModel(
                 new Guid(),
                 new Guid(),
                 new RandomString(),
@@ -2213,7 +2213,7 @@ public sealed record DiagramRichRelationalModelHashTests
             description,
             new DeterminedHash(typeId),
             new DiagramTypeHash(type),
-            new DeterminedHash(series.Select(x => new SeriesHash(x)))
+            new DeterminedHash(series.Select(x => new DiagramSeriesHash(x)))
         );
 
         Assert.True(expected.SequenceEqual(actual));
@@ -2230,9 +2230,9 @@ public sealed record DiagramRichRelationalModelHashTests
             new Guid(),
             new RandomString()
         );
-        IEnumerable<ISeries> series =
+        IEnumerable<IDiagramSeries> series =
         [
-            new SeriesRichRelationalModel(
+            new DiagramSeriesRichRelationalModel(
                 new Guid(),
                 new Guid(),
                 new RandomString(),
@@ -2275,9 +2275,9 @@ public sealed record DiagramRichRelationalModelHashTests
             new Guid(),
             new RandomString()
         );
-        IEnumerable<ISeries> series =
+        IEnumerable<IDiagramSeries> series =
         [
-            new SeriesRichRelationalModel(
+            new DiagramSeriesRichRelationalModel(
                 new Guid(),
                 new Guid(),
                 new RandomString(),
@@ -2320,9 +2320,9 @@ public sealed record DiagramRichRelationalModelHashTests
             new Guid(),
             new RandomString()
         );
-        IEnumerable<ISeries> series =
+        IEnumerable<IDiagramSeries> series =
         [
-            new SeriesRichRelationalModel(
+            new DiagramSeriesRichRelationalModel(
                 new Guid(),
                 new Guid(),
                 new RandomString(),
@@ -2365,9 +2365,9 @@ public sealed record DiagramRichRelationalModelHashTests
             new Guid(),
             new RandomString()
         );
-        IEnumerable<ISeries> series =
+        IEnumerable<IDiagramSeries> series =
         [
-            new SeriesRichRelationalModel(
+            new DiagramSeriesRichRelationalModel(
                 new Guid(),
                 new Guid(),
                 new RandomString(),
@@ -2393,7 +2393,7 @@ public sealed record DiagramRichRelationalModelHashTests
             new DeterminedHash(description),
             new DeterminedHash(typeId),
             type,
-            new DeterminedHash(series.Select(x => new SeriesHash(x)))
+            new DeterminedHash(series.Select(x => new DiagramSeriesHash(x)))
         );
 
         Assert.True(expected.SequenceEqual(actual));
@@ -2410,9 +2410,9 @@ public sealed record DiagramRichRelationalModelHashTests
             new Guid(),
             new RandomString()
         );
-        IEnumerable<ISeries> series =
+        IEnumerable<IDiagramSeries> series =
         [
-            new SeriesRichRelationalModel(
+            new DiagramSeriesRichRelationalModel(
                 new Guid(),
                 new Guid(),
                 new RandomString(),
@@ -2438,7 +2438,7 @@ public sealed record DiagramRichRelationalModelHashTests
             description,
             new DeterminedHash(typeId),
             type,
-            new DeterminedHash(series.Select(x => new SeriesHash(x)))
+            new DeterminedHash(series.Select(x => new DiagramSeriesHash(x)))
         );
 
         Assert.True(expected.SequenceEqual(actual));
@@ -2455,9 +2455,9 @@ public sealed record DiagramRichRelationalModelHashTests
             new Guid(),
             new RandomString()
         );
-        IEnumerable<ISeries> series =
+        IEnumerable<IDiagramSeries> series =
         [
-            new SeriesRichRelationalModel(
+            new DiagramSeriesRichRelationalModel(
                 new Guid(),
                 new Guid(),
                 new RandomString(),
@@ -2483,7 +2483,7 @@ public sealed record DiagramRichRelationalModelHashTests
             new DeterminedHash(description),
             new DeterminedHash(typeId),
             type,
-            new DeterminedHash(series.Select(x => new SeriesHash(x)))
+            new DeterminedHash(series.Select(x => new DiagramSeriesHash(x)))
         );
 
         Assert.True(expected.SequenceEqual(actual));
@@ -2500,9 +2500,9 @@ public sealed record DiagramRichRelationalModelHashTests
             new Guid(),
             new RandomString()
         );
-        IEnumerable<ISeries> series =
+        IEnumerable<IDiagramSeries> series =
         [
-            new SeriesRichRelationalModel(
+            new DiagramSeriesRichRelationalModel(
                 new Guid(),
                 new Guid(),
                 new RandomString(),
@@ -2528,7 +2528,7 @@ public sealed record DiagramRichRelationalModelHashTests
             new DeterminedHash(description),
             typeId,
             type,
-            new DeterminedHash(series.Select(x => new SeriesHash(x)))
+            new DeterminedHash(series.Select(x => new DiagramSeriesHash(x)))
         );
 
         Assert.True(expected.SequenceEqual(actual));
@@ -2545,9 +2545,9 @@ public sealed record DiagramRichRelationalModelHashTests
             new Guid(),
             new RandomString()
         );
-        IEnumerable<ISeries> series =
+        IEnumerable<IDiagramSeries> series =
         [
-            new SeriesRichRelationalModel(
+            new DiagramSeriesRichRelationalModel(
                 new Guid(),
                 new Guid(),
                 new RandomString(),
@@ -2573,7 +2573,7 @@ public sealed record DiagramRichRelationalModelHashTests
             new DeterminedHash(description),
             new DeterminedHash(typeId),
             new DiagramTypeHash(type),
-            new DeterminedHash(series.Select(x => new SeriesHash(x)))
+            new DeterminedHash(series.Select(x => new DiagramSeriesHash(x)))
         );
 
         Assert.True(expected.SequenceEqual(actual));
@@ -2590,9 +2590,9 @@ public sealed record DiagramRichRelationalModelHashTests
             new Guid(),
             new RandomString()
         );
-        IEnumerable<ISeries> series =
+        IEnumerable<IDiagramSeries> series =
         [
-            new SeriesRichRelationalModel(
+            new DiagramSeriesRichRelationalModel(
                 new Guid(),
                 new Guid(),
                 new RandomString(),
@@ -2618,7 +2618,7 @@ public sealed record DiagramRichRelationalModelHashTests
             new DeterminedHash(description),
             new DeterminedHash(typeId),
             new DiagramTypeHash(type),
-            new DeterminedHash(series.Select(x => new SeriesHash(x)))
+            new DeterminedHash(series.Select(x => new DiagramSeriesHash(x)))
         );
 
         Assert.True(expected.SequenceEqual(actual));
@@ -2635,9 +2635,9 @@ public sealed record DiagramRichRelationalModelHashTests
             new Guid(),
             new RandomString()
         );
-        IEnumerable<ISeries> series =
+        IEnumerable<IDiagramSeries> series =
         [
-            new SeriesRichRelationalModel(
+            new DiagramSeriesRichRelationalModel(
                 new Guid(),
                 new Guid(),
                 new RandomString(),
@@ -2663,7 +2663,7 @@ public sealed record DiagramRichRelationalModelHashTests
             description,
             new DeterminedHash(typeId),
             new DiagramTypeHash(type),
-            new DeterminedHash(series.Select(x => new SeriesHash(x)))
+            new DeterminedHash(series.Select(x => new DiagramSeriesHash(x)))
         );
 
         Assert.True(expected.SequenceEqual(actual));
@@ -2680,9 +2680,9 @@ public sealed record DiagramRichRelationalModelHashTests
             new Guid(),
             new RandomString()
         );
-        IEnumerable<ISeries> series =
+        IEnumerable<IDiagramSeries> series =
         [
-            new SeriesRichRelationalModel(
+            new DiagramSeriesRichRelationalModel(
                 new Guid(),
                 new Guid(),
                 new RandomString(),
@@ -2725,9 +2725,9 @@ public sealed record DiagramRichRelationalModelHashTests
             new Guid(),
             new RandomString()
         );
-        IEnumerable<ISeries> series =
+        IEnumerable<IDiagramSeries> series =
         [
-            new SeriesRichRelationalModel(
+            new DiagramSeriesRichRelationalModel(
                 new Guid(),
                 new Guid(),
                 new RandomString(),
@@ -2770,9 +2770,9 @@ public sealed record DiagramRichRelationalModelHashTests
             new Guid(),
             new RandomString()
         );
-        IEnumerable<ISeries> series =
+        IEnumerable<IDiagramSeries> series =
         [
-            new SeriesRichRelationalModel(
+            new DiagramSeriesRichRelationalModel(
                 new Guid(),
                 new Guid(),
                 new RandomString(),
@@ -2798,7 +2798,7 @@ public sealed record DiagramRichRelationalModelHashTests
             new DeterminedHash(description),
             typeId,
             new DiagramTypeHash(type),
-            new DeterminedHash(series.Select(x => new SeriesHash(x)))
+            new DeterminedHash(series.Select(x => new DiagramSeriesHash(x)))
         );
 
         Assert.True(expected.SequenceEqual(actual));
@@ -2815,9 +2815,9 @@ public sealed record DiagramRichRelationalModelHashTests
             new Guid(),
             new RandomString()
         );
-        IEnumerable<ISeries> series =
+        IEnumerable<IDiagramSeries> series =
         [
-            new SeriesRichRelationalModel(
+            new DiagramSeriesRichRelationalModel(
                 new Guid(),
                 new Guid(),
                 new RandomString(),
@@ -2843,7 +2843,7 @@ public sealed record DiagramRichRelationalModelHashTests
             new DeterminedHash(description),
             new DeterminedHash(typeId),
             type,
-            new DeterminedHash(series.Select(x => new SeriesHash(x)))
+            new DeterminedHash(series.Select(x => new DiagramSeriesHash(x)))
         );
 
         Assert.True(expected.SequenceEqual(actual));
@@ -2860,9 +2860,9 @@ public sealed record DiagramRichRelationalModelHashTests
             new Guid(),
             new RandomString()
         );
-        IEnumerable<ISeries> series =
+        IEnumerable<IDiagramSeries> series =
         [
-            new SeriesRichRelationalModel(
+            new DiagramSeriesRichRelationalModel(
                 new Guid(),
                 new Guid(),
                 new RandomString(),
@@ -2905,9 +2905,9 @@ public sealed record DiagramRichRelationalModelHashTests
             new Guid(),
             new RandomString()
         );
-        IEnumerable<ISeries> series =
+        IEnumerable<IDiagramSeries> series =
         [
-            new SeriesRichRelationalModel(
+            new DiagramSeriesRichRelationalModel(
                 new Guid(),
                 new Guid(),
                 new RandomString(),
@@ -2933,7 +2933,7 @@ public sealed record DiagramRichRelationalModelHashTests
             new DeterminedHash(description),
             new DeterminedHash(typeId),
             new DiagramTypeHash(type),
-            new DeterminedHash(series.Select(x => new SeriesHash(x)))
+            new DeterminedHash(series.Select(x => new DiagramSeriesHash(x)))
         );
 
         Assert.True(expected.SequenceEqual(actual));
@@ -2950,9 +2950,9 @@ public sealed record DiagramRichRelationalModelHashTests
             new Guid(),
             new RandomString()
         );
-        IEnumerable<ISeries> series =
+        IEnumerable<IDiagramSeries> series =
         [
-            new SeriesRichRelationalModel(
+            new DiagramSeriesRichRelationalModel(
                 new Guid(),
                 new Guid(),
                 new RandomString(),
@@ -2976,7 +2976,7 @@ public sealed record DiagramRichRelationalModelHashTests
                 .Concat(new DeterminedHash(description))
                 .Concat(new DeterminedHash(typeId))
                 .Concat(new DiagramTypeHash(type))
-                .Concat(new DeterminedHash(series.Select(x => new SeriesHash(x))))
+                .Concat(new DeterminedHash(series.Select(x => new DiagramSeriesHash(x))))
         ).GetEnumerator();
 
         bool equal = true;
@@ -3005,9 +3005,9 @@ public sealed record DiagramRichRelationalModelHashTests
             new Guid(),
             new RandomString()
         );
-        IEnumerable<ISeries> series =
+        IEnumerable<IDiagramSeries> series =
         [
-            new SeriesRichRelationalModel(
+            new DiagramSeriesRichRelationalModel(
                 new Guid(),
                 new Guid(),
                 new RandomString(),
@@ -3022,7 +3022,7 @@ public sealed record DiagramRichRelationalModelHashTests
                 .Concat(new DeterminedHash(description))
                 .Concat(new DeterminedHash(typeId))
                 .Concat(new DiagramTypeHash(type))
-                .Concat(new DeterminedHash(series.Select(x => new SeriesHash(x))))
+                .Concat(new DeterminedHash(series.Select(x => new DiagramSeriesHash(x))))
         );
 
         Assert.Equal(
