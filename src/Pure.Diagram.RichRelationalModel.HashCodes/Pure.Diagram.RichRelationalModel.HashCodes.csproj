@@ -14,6 +14,7 @@
     <AssemblyName>Pure.Diagram.RichRelationalModel.HashCodes</AssemblyName>
     <Authors>Dmitry Kurochkin</Authors>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
     <PackageProjectUrl>https://github.com/kudima03/Pure.Diagram.RichRelationalModel.HashCodes</PackageProjectUrl>
   </PropertyGroup>
   <ItemGroup>
@@ -23,5 +24,8 @@
       Version="0.1.0-preview.1.0.0"
     />
     <PackageReference Include="Pure.HashCodes" Version="2.1.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="../../README.md" Pack="true" PackagePath="/" />
   </ItemGroup>
 </Project>
