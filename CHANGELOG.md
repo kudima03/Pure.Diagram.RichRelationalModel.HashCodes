@@ -6,6 +6,19 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ---
 
+## [0.1.0-preview.1.1.0] — 2026-11-11
+
+### Added
+
+- Added the `net11.0` target framework.
+
+### Changed
+
+- Updated `Pure.Diagram.Model.HashCodes` and
+  `Pure.Diagram.RichRelationalModel.Abstractions` to `0.1.0-preview.1.1.0` and
+  `Pure.HashCodes` to `2.2.0`.
+- CI and the devcontainer now use the .NET 11 SDK.
+
 ## [0.1.0-preview.1.0.0] — 2026-04-20
 
 ### Changed
